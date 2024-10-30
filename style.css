@@ -1,0 +1,559 @@
+@font-face {
+    font-family: futura;
+    src: url("Futura-Bold.ttf");
+}
+
+@font-face {
+    font-family: abc;
+    src: url("ABCSocialMono-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-family: helvetica;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    overflow: hidden;
+    position: relative;
+}
+
+*::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+.page5 .page5-content .second h4::selection {
+    background-color: rgba(128, 128, 128, 0.781);
+}
+
+.page5 .page5-content .first .connect h4::selection, .page5 .page5-content .first .nitty h4::selection {
+    background-color: rgba(128, 128, 128, 0.781);
+}
+
+/** utility classes **/
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anchor-hover:hover {
+    opacity: 0.55;
+}
+
+a,h4,h5 {
+    cursor: pointer;
+}
+
+/** page1 **/
+.page1 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #f7f7f7;
+}
+
+.page1 .nav {
+    width: 100%;
+    height: 130px;
+    background-color: transparent;
+    justify-content: space-between;
+    padding-inline: 25px;
+    position: fixed;
+    z-index: 9;
+}
+
+.nav-part2 {
+    align-items: flex-start;
+    height: 100%;
+    gap: 60px;
+    padding-block: 28px;
+}
+
+.nav-part2 .anchor {
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.nav-part2 .anchor li {
+    list-style: none;
+    overflow: hidden;
+}
+
+.nav-part2 .anchor li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    font-size: 0.77rem;
+    font-weight: 500;
+    transition: all ease-in-out 0.2s;
+    position: relative;
+}
+
+.nav-part2 .anchor li a::after {
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    background-color: #000;
+    position: absolute;
+    left: -100%;
+    bottom: -2px;
+    transition: all ease-in-out 0.3s;
+}
+
+.nav-part2 .anchor li a:hover::after {
+    left: 0;
+}
+
+.nav-part2 .icons {
+    align-items: flex-start;
+    gap: 70px;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+    padding: 8px 15px;
+    margin-top: -6px;
+}
+
+.nav-part2 .icons i {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.icons .icon2 {
+    transition: all ease-in-out 0.3s;
+}
+
+.nav-part2 .icons .icon2:hover {
+    rotate: -20deg;
+}
+
+/** page1-content **/
+.page1-content {
+    width: 100%;
+    height: calc(100% - 132px);
+    padding-inline: 25px;
+    padding-top: 220px;
+}
+
+.page1-content h1 {
+    font-family: futura;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15.5rem;
+    letter-spacing: -12px;
+    line-height: 0.85;
+    width: 100%;
+}
+
+.page1-content .page1-video {
+    margin-top: 20px;
+    position: relative;
+}
+
+.page1-content .page1-video video {
+    width: 100%;
+    height: 115vh;
+    object-fit: cover;
+}
+
+.page1-content .page1-video .play {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    border-radius: 50%;
+    font-family: futura;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    z-index: 5;
+    opacity: 0;
+    scale: 0;
+}
+
+/** page2 **/
+.page2 {
+    width: 1005;
+    min-height: 100vh;
+    padding-inline: 25px;
+    margin-top: 75px;
+    background-color: #f7f7f7;
+}
+
+.page2 .first-div {
+    justify-content: space-between;
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.first-div h3 {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.page2 .images {
+    width: 100%;
+    height: 105vh;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.images .img {
+    height: 100%;
+    width: 33%;
+    position: relative;
+}
+
+.images .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.images .img .img-content {
+    width: 64.74%;
+    height: 50px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    justify-content: space-between;
+    padding-inline: 32px;
+}
+
+.images .img1 .img-content {
+    background-color: #fff6de;
+}
+
+.images .img2 .img-content {
+    background-color: #ffffff;
+}
+
+.images .img3 .img-content {
+    background-color: #e2df9a;
+}
+
+.images .img .img-content i {
+    font-size: 10px;
+}
+
+.images .img .img-content h3 {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 200;
+    letter-spacing: -0.3px;
+}
+
+.images .img .img-content h4 {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+.images .img .img-content .last-icon {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/** page3 **/
+.page3 {
+    width: 100%;
+    padding-inline: 25px;
+    min-height: 100vh;
+    position: relative;
+    background-color: #f7f7f7;
+    padding-top: 30px;
+}
+
+.white-circle {
+    height: 270px;
+    width: 270px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    opacity: 0;
+    scale: 0;
+}
+
+.page3 .page3-content {
+    justify-content: space-between;
+    width: 100%;
+    height: 40vh;
+    align-items: flex-start;
+}
+
+.page3 .page3-content p {
+    font-size: 3.5rem;
+    font-family: futura;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.page3 .page3-content .support-section {
+    flex-direction: column;
+    gap: 28px;
+    align-items: flex-start;
+    padding-left: 100px;
+}
+
+.page3 .page3-content .support-section h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 65%;
+}
+
+.page3 .page3-content .support-section h4 {
+    font-family: abc;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid #000;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.05s;
+}
+
+.page3 .page3-content .support-section h4::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0px;
+    left: -100%;
+    z-index: 9;
+    transition: left ease-in-out 0.3s;
+}
+
+.page3 .page3-content .support-section h4:hover::after {
+    left: 0;
+}
+
+.page3 .page3-content .support-section h4:hover {
+    border-bottom: 1px solid #00000000;
+}
+
+.page3 .shop-section {
+    width: 100%;
+    height: calc(100% - 60vh);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.page3 .shop-section .box {
+    width: 48%;
+    height: 600px;
+    margin-top: 80px;
+}
+
+.page3 .shop-section .box img {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+}
+
+/** page4 **/
+.page4 {
+    height: 105vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-inline: 25px;
+    padding-block: 60px;
+}
+
+.page4 .page4-content {
+    gap: 26px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 60vh;
+    width: 32%;
+}
+
+.page4 .page4-content h2 {
+    font-family: futura;
+    text-transform: uppercase;
+    font-size: 1.55rem;
+}
+
+.page4 .page4-content h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 75%;
+}
+
+.page4 .page4-content h4 {
+    font-family: abc;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid #000;
+    overflow: hidden;
+    transition: all ease 0.05s;
+    position: relative;
+}
+
+.page4 .page4-content h4::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    z-index: 9;
+    transition: left ease-in-out 0.3s;
+}
+
+.page4 .page4-content h4:hover::after {
+    left: 0;
+}
+
+.page4 .page4-content h4:hover {
+    border-bottom: 1px solid #00000000;
+}
+
+.page4 .page4-img {
+    height: 100%;
+    width: 68%;
+    gap: 20px;
+}
+
+.page4 .page4-img .image {
+    width: 46%;
+    height: 100%;
+}
+
+.page4 .page4-img .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/** page5 **/
+.page5 {
+    width: 100%;
+    height: 120vh;
+    background-color: #f7f7f7;
+    padding-inline: 25px;
+    padding-block: 60px;
+}
+
+.page5 .email-div {
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000b4;
+    padding-inline: 6px;
+}
+
+.page5 .email-div h2 {
+    font-family: futura;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.page5 .page5-content {
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 80px);
+    align-items: flex-start;
+    padding-top: 180px;
+    gap: 60px;
+}
+
+.page5 .page5-content .first {
+    width: 100%;
+    min-height: 28vh;
+    justify-content: space-between;
+}
+
+.page5 .page5-content .first .connect h4 {
+    color: #0000006e;
+    font-size: 0.83rem;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    margin-bottom: 15px;
+    word-spacing: 2px;
+}
+
+.page5 .page5-content .first .connect h5 {
+    text-transform: capitalize;
+    font-size: 0.88rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #000000c4;
+    transition: all ease-in-out 0.2s;
+}
+
+.page5 .page5-content .first svg {
+    width: 220px;
+    margin-top: 20px;
+}
+
+.page5 .page5-content .first .nitty h4 {
+    color: #0000006e;
+    font-size: 0.83rem;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    margin-bottom: 15px;
+    word-spacing: 2px;
+}
+
+.page5 .page5-content .first .nitty h5 {
+    text-transform: capitalize;
+    font-size: 0.88rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #000000c4;
+    text-align: right;
+    transition: all ease-in-out 0.2s;
+}
+
+.page5 .page5-content .second {
+    align-items: flex-start;
+    width: 100%;
+    gap: 40px;
+}
+
+.page5 .page5-content .second h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #00000061;
+}
+
+.page5 .page5-content .third {
+    width: 100%;
+    text-align: center;
+}
+
+.page5 .page5-content .third p {
+    font-size: 0.9rem;
+    width: 68%;
+    line-height: 1.4;
+}
+
+.page5 .page5-content .first .connect h5:hover, .page5 .page5-content .first .nitty h5:hover {
+    opacity: 0.6;
+}
